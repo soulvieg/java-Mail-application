@@ -5,17 +5,29 @@ Mail arrivano in formato json tramite connessione http, chiedere alla lily se si
 Nel caso link di stackoverflow: https://stackoverflow.com/questions/10926353/how-to-read-json-file-into-java-with-simple-json-library
 */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Email {
     private final int id;
     private String sender;
-    private String receipient;
+    private List<String> receipients;
     private String subject;
     private String body;
+
+    public Email(int id, String sender, List<String> receipients, String subject, String body) {
+        this.id = id;
+        this.sender = sender;
+        this.receipients = receipients;
+        this.subject = subject;
+        this.body = body;
+    }
 
     public Email(int id, String sender, String receipient, String subject, String body) {
         this.id = id;
         this.sender = sender;
-        this.receipient = receipient;
+        this.receipients = new ArrayList<String>();
+        this.receipients.add(receipient);
         this.subject = subject;
         this.body = body;
     }
@@ -32,13 +44,16 @@ public class Email {
         this.sender = sender;
     }
 
-    public String getReceipient() {
-        return receipient;
+    public List<String> getReceipientList() {
+        return receipients;
     }
 
-    public void setReceipient(String receipient) {
-        this.receipient = receipient;
+    public void setReceipientList(List<String> receipient) {
+        this.receipients = receipient;
     }
+    public void addReceipient(String receipient) {receipients.add(receipient);}
+
+    public void removeReceipient(String receipient) {receipients.remove(receipient); }
 
     public String getSubject() {
         return subject;
