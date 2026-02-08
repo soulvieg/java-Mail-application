@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mailserver.controller.ServerController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Server Monitor" textFill="#2c3e50">
+        <font>
+            <Font name="Fira Code Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <HBox alignment="CENTER" spacing="20.0">
+        <Label text="Log di sistema" textFill="#7f8c8d" />
+        <Button fx:id="btnStart" onAction="#onStartClick" prefWidth="100.0" style="-fx-background-color: #085328; -fx-text-fill: #ffffff;" text="Start" />
+        <Button fx:id="btnStop" disable="true" onAction="#onStopClick" prefWidth="100.0" style="-fx-background-color: #932215; -fx-text-fill: white;" text="Stop" />
+    </HBox>
+
+    <ListView fx:id="logList" prefHeight="300.0" prefWidth="500.0" />
+</VBox>

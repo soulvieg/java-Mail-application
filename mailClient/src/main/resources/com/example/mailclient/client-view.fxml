@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mailclient.controller.ClientController">
+    <top>
+        <ToolBar>
+            <Button text="New Email" onAction="#showWritePane"/>
+            <Button text="Refresh" onAction="#refreshInbox"/>
+            <Separator orientation="VERTICAL"/>
+            <Label fx:id="userEmailLabel" text="Utente: "/>
+        </ToolBar>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.35">
+            <VBox>
+                <ListView fx:id="emailListView" VBox.vgrow="ALWAYS"/>
+            </VBox>
+
+            <StackPane fx:id="contentPane">
+                <VBox fx:id="readPane" spacing="10.0" visible="false">
+                    <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/></padding>
+                    <Label fx:id="detailSubject" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                    <HBox spacing="5.0">
+                        <Label text="Da:" style="-fx-font-weight: bold;"/>
+                        <Label fx:id="detailSender"/>
+                    </HBox>
+                    <TextArea fx:id="detailBody" editable="false" VBox.vgrow="ALWAYS" wrapText="true"/>
+                    <Button text="Elimina" onAction="#handleDelete" style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
+                </VBox>
+
+                <VBox fx:id="writePane" spacing="10.0" visible="false">
+                    <padding><Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/></padding>
+                    <TextField fx:id="writeRecipient" promptText="Destinatari (separati da virgola)"/>
+                    <TextField fx:id="writeSubject" promptText="Oggetto"/>
+                    <TextArea fx:id="writeBody" promptText="Scrivi il messaggio..." VBox.vgrow="ALWAYS"/>
+                    <HBox spacing="10.0" alignment="CENTER_RIGHT">
+                        <Button text="Annulla" onAction="#hideWritePane"/>
+                        <Button text="Invia" onAction="#handleSend" style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+                    </HBox>
+                </VBox>
+
+                <Label fx:id="placeholderLabel" text="Seleziona una mail o scrivi un nuovo messaggio" textFill="GRAY"/>
+            </StackPane>
+        </SplitPane>
+    </center>
+</BorderPane>

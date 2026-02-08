@@ -1,9 +1,4 @@
-package model;
-
-/*
-Mail arrivano in formato json tramite connessione http, chiedere alla lily se si può usare la libreria
-Nel caso link di stackoverflow: https://stackoverflow.com/questions/10926353/how-to-read-json-file-into-java-with-simple-json-library
-*/
+package com.example.mailserver.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,23 +6,33 @@ import java.util.List;
 public class Email {
     private final int id;
     private String sender;
-    private List<String> receipients;
+    private List<String> recipients;
     private String subject;
     private String body;
 
-    public Email(int id, String sender, List<String> receipients, String subject, String body) {
+
+
+    public Email(){
+        this.id = 0;
+        this.sender = "";
+        this.recipients = new ArrayList<>();
+        this.subject = "";
+        this.body = "";
+    }
+    public Email(int id, String sender, List<String> recipients, String subject, String body) {
         this.id = id;
         this.sender = sender;
-        this.receipients = receipients;
+        this.recipients = recipients;
         this.subject = subject;
         this.body = body;
     }
 
+
     public Email(int id, String sender, String receipient, String subject, String body) {
         this.id = id;
         this.sender = sender;
-        this.receipients = new ArrayList<String>();
-        this.receipients.add(receipient);
+        this.recipients = new ArrayList<String>();
+        this.recipients.add(receipient);
         this.subject = subject;
         this.body = body;
     }
@@ -45,15 +50,18 @@ public class Email {
     }
 
     public List<String> getReceipientList() {
-        return receipients;
+        return recipients;
     }
 
-    public void setReceipientList(List<String> receipient) {
-        this.receipients = receipient;
+    public void setRecipientList(List<String> receipient) {
+        this.recipients = receipient;
     }
-    public void addReceipient(String receipient) {receipients.add(receipient);}
 
-    public void removeReceipient(String receipient) {receipients.remove(receipient); }
+    public void addRecipient(String receipient) {
+        recipients.add(receipient);}
+
+    public void removeRecipient(String receipient) {
+        recipients.remove(receipient); }
 
     public String getSubject() {
         return subject;

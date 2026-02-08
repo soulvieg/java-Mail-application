@@ -4,12 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4718c684-e8ab-43a3-9569-f38a5bb77728" name="Changes" comment="" />
+    <list default="true" id="4718c684-e8ab-43a3-9569-f38a5bb77728" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/ClientModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/network/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/client-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/login-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/controller/ServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/JSONManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/LogType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/RequestCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/RequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/ResponseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/test/java/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mailServer/src/test/java/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/model/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/model/JsonParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/hello-view.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "soulvieg"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:soulvieg/java-Mail-application.git",
+    "accountId": "aaacec6a-94b5-4c4b-8a32-70b78d6c2f7e"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -17,9 +75,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="350M3I1xV6KkrnD4g2K43IUi2OB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,22 +85,52 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Launcher.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dimoedo/Documents/code/Java/mailClient",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.mailclient.Launcher" />
+      <module name="mailClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mailclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
       </set>
     </attachedChunks>
   </component>
@@ -54,6 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762242341623</updated>
       <workItem from="1762242348609" duration="99000" />
+      <workItem from="1770559727669" duration="6492000" />
     </task>
     <servers />
   </component>
