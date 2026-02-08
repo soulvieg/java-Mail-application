@@ -1,0 +1,11 @@
+[
+  {
+    "id": 2,
+    "sender": "admin@gmail.com",
+    "recipients": [
+      "luigi@gmail.com"
+    ],
+    "subject": "Benvenuto Luigi",
+    "body": "Casella creata."
+  }
+]

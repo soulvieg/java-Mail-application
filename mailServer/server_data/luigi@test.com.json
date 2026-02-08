@@ -1,0 +1,11 @@
+[
+  {
+    "id": 2,
+    "sender": "admin@server.com",
+    "recipients": [
+      "luigi@test.com"
+    ],
+    "subject": "Benvenuto Luigi",
+    "body": "Casella creata."
+  }
+]

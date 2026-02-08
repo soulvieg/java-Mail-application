@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "sender": "admin@server.com",
+    "recipients": [
+      "mario@test.com"
+    ],
+    "subject": "Benvenuto Mario",
+    "body": "Casella creata."
+  },
+  {
+    "id": 2,
+    "sender": "admin@server.com",
+    "recipients": [
+      "luigi@test.com"
+    ],
+    "subject": "Benvenuto Luigi",
+    "body": "Casella creata."
+  }
+]

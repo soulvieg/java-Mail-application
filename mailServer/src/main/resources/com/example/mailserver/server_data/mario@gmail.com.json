@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "sender": "admin@gmail.com",
+    "recipients": [
+      "mario@gmail.com"
+    ],
+    "subject": "Benvenuto Mario",
+    "body": "Casella creata."
+  },
+  {
+    "id": 3,
+    "sender": "mario@gmail.com",
+    "recipients": [
+      "luigi@gmail.com",
+      "mario@gmail.com"
+    ],
+    "subject": "Prova Progetto",
+    "body": "IT\u0027s a me Mario"
+  },
+  {
+    "id": 3,
+    "sender": "mario@gmail.com",
+    "recipients": [
+      "luigi@gmail.com",
+      "mario@gmail.com"
+    ],
+    "subject": "Prova Progetto",
+    "body": "IT\u0027s a me Mario"
+  }
+]
