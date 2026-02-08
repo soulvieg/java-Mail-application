@@ -1,5 +1,6 @@
 package com.example.mailclient.controller;
 
+import com.example.mailclient.ClientApplication;
 import com.example.mailclient.model.ClientModel;
 import com.example.mailclient.network.ResponseStatus;
 import javafx.fxml.FXML;
@@ -12,6 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class LoginController {
 
@@ -23,6 +25,7 @@ public class LoginController {
     private Label errorLabel;
 
     private ClientModel model;
+    private static final String regexEmail = "^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$";
 
     public void initModel(ClientModel model) {
         this.model = model;
@@ -32,43 +35,53 @@ public class LoginController {
     private void handleLogin() {
         String email = emailField.getText().trim();
 
+
         if (email.isEmpty()) {
-            errorLabel.setText("Enter your email address");
+            errorLabel.setText("Per favore, inserisci un indirizzo email.");
             return;
         }
 
 
+        if (!isValidEmail(email)) {
+            errorLabel.setText("Formato non valido! Usa: user@domain.ext");
+            return;
+        }
+
+        errorLabel.setText("Connessione in corso...");
+
         ResponseStatus status = model.login(email);
 
-        if (status == ResponseStatus.SUCCESS) {
-            switchToClientView();
-        } else if (status == ResponseStatus.USER_NOT_FOUND) {
-            errorLabel.setText("User not found");
-        } else {
-            errorLabel.setText("Server is unavailable");
+        switch (status) {
+            case SUCCESS -> switchToClientView();
+            case USER_NOT_FOUND -> errorLabel.setText("Utente non registrato o inesistente.");
+            case ERROR -> errorLabel.setText("Errore di comunicazione col server.");
+            default -> errorLabel.setText("Errore sconosciuto.");
         }
+    }
+
+    private boolean isValidEmail(String email) {
+        return Pattern.matches(regexEmail, email);
     }
 
     private void switchToClientView() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("client-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(ClientApplication.class.getResource("client-view.fxml"));
             Parent root = loader.load();
 
-            ClientController controller = loader.getController();
-            controller.initModel(this.model);
+            ClientController clientController = loader.getController();
+            clientController.initModel(this.model);
 
-            Stage mainStage = new Stage();
-            mainStage.setTitle("THE MAIL - " + model.getUserEmail());
-            mainStage.setScene(new Scene(root));
-            mainStage.show();
-
+            Stage stage = new Stage();
+            stage.setTitle("THE MAIL - " + model.getUserEmail());
+            stage.setScene(new Scene(root));
+            stage.show();
 
             Stage loginStage = (Stage) pane.getScene().getWindow();
             loginStage.close();
 
         } catch (IOException e) {
             System.err.println(e.getMessage());
-            errorLabel.setText("ERROR: "+ e.getMessage());
+            errorLabel.setText("Errore critico: impossibile caricare l'interfaccia client.");
         }
     }
 }

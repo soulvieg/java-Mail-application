@@ -10,7 +10,10 @@
             <Button text="New Email" onAction="#showWritePane"/>
             <Button text="Refresh" onAction="#refreshInbox"/>
             <Separator orientation="VERTICAL"/>
-            <Label fx:id="userEmailLabel" text="Utente: "/>
+            <ToggleButton fx:id="btnInbox" text="Inbox" selected="true" onAction="#showInbox"/>
+            <ToggleButton fx:id="btnSent" text="Sent" onAction="#showSent"/>
+            <Separator orientation="VERTICAL"/>
+            <Label fx:id="userEmailLabel" text="User: "/>
         </ToolBar>
     </top>
     <center>
@@ -28,7 +31,10 @@
                         <Label fx:id="detailSender"/>
                     </HBox>
                     <TextArea fx:id="detailBody" editable="false" VBox.vgrow="ALWAYS" wrapText="true"/>
+                    <Button text="Rispondi" onAction="#handleReply"/>
+                    <Button text="Inoltra" onAction="#handleForward"/>
                     <Button text="Elimina" onAction="#handleDelete" style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
+
                 </VBox>
 
                 <VBox fx:id="writePane" spacing="10.0" visible="false">

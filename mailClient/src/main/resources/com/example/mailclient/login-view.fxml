@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
 
-<VBox fx:id="pane" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mailclient.controller.LoginController">
+<VBox fx:id="pane" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mailclient.controller.LoginController">
     <padding>
-        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
     </padding>
-    <Label text="Welcome to THE MAIL" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
-    <TextField fx:id="emailField" promptText="Inserisci la tua email (es. utente@gmail.com)" prefWidth="300.0"/>
-    <Button text="Log in" onAction="#handleLogin" prefWidth="100.0" style="-fx-background-color: #1d231d; -fx-text-fill: white;"/>
-    <Label fx:id="errorLabel" text="" textFill="RED"/>
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Welcome to THE MAIL" />
+    <TextField fx:id="emailField" prefHeight="24.0" prefWidth="310.0" promptText="Enter your email address (es. utente@gmail.com)" />
+    <Button onAction="#handleLogin" prefWidth="100.0" style="-fx-background-color: #1d231d; -fx-text-fill: white;" text="Log in" />
+    <Label fx:id="errorLabel" text="" textFill="RED" />
 </VBox>

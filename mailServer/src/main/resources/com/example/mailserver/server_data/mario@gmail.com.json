@@ -27,5 +27,15 @@
     ],
     "subject": "Prova Progetto",
     "body": "IT\u0027s a me Mario"
+  },
+  {
+    "id": 5,
+    "sender": "marco@gmail.com",
+    "recipients": [
+      "luigi@gmail.com",
+      "mario@gmail.com"
+    ],
+    "subject": "Fwd: MAIL di prova",
+    "body": "\n\n---------- Forwarded message ----------\nFrom: admin@gmail.com\nSubject: MAIL di prova\n\nCIAOOOOOOOOO!!!!!!!"
   }
 ]

@@ -1,11 +1,21 @@
 [
   {
-    "id": 2,
-    "sender": "admin@gmail.com",
+    "id": 5,
+    "sender": "marco@gmail.com",
     "recipients": [
-      "luigi@gmail.com"
+      "luigi@gmail.com",
+      "mario@gmail.com"
     ],
-    "subject": "Benvenuto Luigi",
-    "body": "Casella creata."
+    "subject": "Fwd: MAIL di prova",
+    "body": "\n\n---------- Forwarded message ----------\nFrom: admin@gmail.com\nSubject: MAIL di prova\n\nCIAOOOOOOOOO!!!!!!!"
+  },
+  {
+    "id": 6,
+    "sender": "luigi@gmail.com",
+    "recipients": [
+      "marco@gmail.com"
+    ],
+    "subject": "Re: Fwd: MAIL di prova",
+    "body": "\n\n\n---------- Response a marco@gmail.com ----------\nWritten the: TIMESTAMP\n\n\n\n---------- Forwarded message ----------\nFrom: admin@gmail.com\nSubject: MAIL di prova\n\nCIAOOOOOOOOO!!!!!!!\n\n\nCiao marco, benvenuto"
   }
 ]

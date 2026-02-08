@@ -4,41 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4718c684-e8ab-43a3-9569-f38a5bb77728" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/ClientModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/network/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/client-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/login-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/controller/ServerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/JSONManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/LogType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/RequestCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/ResponseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/network/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/test/java/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mailServer/src/test/java/TestMain.java" afterDir="false" />
+    <list default="true" id="4718c684-e8ab-43a3-9569-f38a5bb77728" name="Changes" comment="Added structure part 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/ViewMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/ClientModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/model/ClientModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mailclient/network/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mailclient/network/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/ServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/model/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/com/example/mailserver/model/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/model/JsonParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/client-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/client-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/mailclient/login-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mailServer/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/admin@gmail.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/admin@gmail.com.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/luigi@gmail.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/luigi@gmail.com.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/mario@gmail.com.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mailServer/src/main/resources/com/example/mailserver/server_data/mario@gmail.com.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +30,7 @@
       <list>
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -95,19 +76,19 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dimoedo/Documents/code/Java/mailClient",
+    "last_opened_file_path": "/home/dimoedo/Documents/code/Java/mailServer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.general",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Launcher" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.mailclient.Launcher" />
       <module name="mailClient" />
       <extension name="coverage">
@@ -142,11 +123,33 @@
       <option name="presentableId" value="Default" />
       <updated>1762242341623</updated>
       <workItem from="1762242348609" duration="99000" />
-      <workItem from="1770559727669" duration="6492000" />
+      <workItem from="1770559727669" duration="17016000" />
     </task>
+    <task id="LOCAL-00001" summary="Added structure">
+      <option name="closed" value="true" />
+      <created>1770570611075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770570611075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added structure part 2">
+      <option name="closed" value="true" />
+      <created>1770570687535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770570687535</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added structure" />
+    <MESSAGE value="Added structure part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added structure part 2" />
   </component>
 </project>

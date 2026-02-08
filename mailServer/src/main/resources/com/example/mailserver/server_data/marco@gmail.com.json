@@ -1,0 +1,29 @@
+[
+  {
+    "id": 4,
+    "sender": "admin@gmail.com",
+    "recipients": [
+      "marco@gmail.com"
+    ],
+    "subject": "MAIL di prova",
+    "body": "CIAOOOOOOOOO!!!!!!!"
+  },
+  {
+    "id": 6,
+    "sender": "luigi@gmail.com",
+    "recipients": [
+      "marco@gmail.com"
+    ],
+    "subject": "Re: Fwd: MAIL di prova",
+    "body": "\n\n\n---------- Response a marco@gmail.com ----------\nWritten the: TIMESTAMP\n\n\n\n---------- Forwarded message ----------\nFrom: admin@gmail.com\nSubject: MAIL di prova\n\nCIAOOOOOOOOO!!!!!!!\n\n\nCiao marco, benvenuto"
+  },
+  {
+    "id": 7,
+    "sender": "marco@gmail.com",
+    "recipients": [
+      "luigi@gmail.com"
+    ],
+    "subject": "Re: Fwd: MAIL di prova",
+    "body": "\n\n\n---------- Response a luigi@gmail.com ----------\nWritten the: TIMESTAMP\n\n\n\n\n---------- Response a marco@gmail.com ----------\nWritten the: TIMESTAMP\n\n\n\n---------- Forwarded message ----------\nFrom: admin@gmail.com\nSubject: MAIL di prova\n\nCIAOOOOOOOOO!!!!!!!\n\nhello\n\n\nCiao marco, benvenuto"
+  }
+]

@@ -27,6 +27,8 @@ public class Client {
              PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
 
+            socket.setSoTimeout(5000);
+
             output.println(gson.toJson(request));
 
             String line = input.readLine();

@@ -16,5 +16,14 @@
     ],
     "subject": "Benvenuto Luigi",
     "body": "Casella creata."
+  },
+  {
+    "id": 4,
+    "sender": "admin@gmail.com",
+    "recipients": [
+      "marco@gmail.com"
+    ],
+    "subject": "MAIL di prova",
+    "body": "CIAOOOOOOOOO!!!!!!!"
   }
 ]

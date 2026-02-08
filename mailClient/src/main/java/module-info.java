@@ -6,5 +6,7 @@ module com.example.mailclient {
     opens com.example.mailclient to javafx.fxml;
     opens com.example.mailclient.controller to javafx.fxml;
     opens com.example.mailclient.model to com.google.gson;
+    opens com.example.mailclient.network to com.google.gson;
+
     exports com.example.mailclient;
 }
